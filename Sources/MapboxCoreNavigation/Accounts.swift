@@ -1,5 +1,5 @@
 import Foundation
-@_implementationOnly import MapboxCommon_Private
+//@_implementationOnly import MapboxCommon_Private
 
 enum NavigationBillingMethod: String {
     case user = "user"
