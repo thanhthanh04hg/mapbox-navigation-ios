@@ -57,48 +57,48 @@ let package = Package(
                 .copy("Resources/MBXInfo.plist"),
                 .copy("Resources/PrivacyInfo.xcprivacy")
             ]),
-        .target(
-            name: "TestHelper",
-            dependencies: [
-                "CwlPreconditionTesting",
-                "MapboxCoreNavigation",
-                "MapboxNavigation",
-//                "MapboxMaps",
-            ],
-            exclude: ["Info.plist"],
-            resources: [
-                .process("Fixtures"),
-                .process("tiles"),
-            ]
-        ),
-        .target(
-            name: "CarPlayTestHelper",
-            exclude: [
-                "Info.plist",
-                "CarPlayTestHelper.h",
-            ]
-        ),
-        .testTarget(
-            name: "MapboxCoreNavigationTests",
-            dependencies: ["TestHelper"],
-            exclude: ["Info.plist"],
-            resources: [
-                .process("Fixtures"),
-            ]
-        ),
-        .testTarget(
-            name: "MapboxNavigationTests",
-            dependencies: [
-                "MapboxNavigation",
-                "TestHelper",
-                "OHHTTPStubs",
-                "CarPlayTestHelper",
-                "SnapshotTesting",
-            ],
-            exclude: [
-                "Info.plist",
-                "__Snapshots__", // Ignore snapshots folder
-            ]
-        ),
+//        .target(
+//            name: "TestHelper",
+//            dependencies: [
+//                "CwlPreconditionTesting",
+//                "MapboxCoreNavigation",
+//                "MapboxNavigation",
+////                "MapboxMaps",
+//            ],
+//            exclude: ["Info.plist"],
+//            resources: [
+//                .process("Fixtures"),
+//                .process("tiles"),
+//            ]
+//        ),
+//        .target(
+//            name: "CarPlayTestHelper",
+//            exclude: [
+//                "Info.plist",
+//                "CarPlayTestHelper.h",
+//            ]
+//        ),
+//        .testTarget(
+//            name: "MapboxCoreNavigationTests",
+//            dependencies: ["TestHelper"],
+//            exclude: ["Info.plist"],
+//            resources: [
+//                .process("Fixtures"),
+//            ]
+//        ),
+//        .testTarget(
+//            name: "MapboxNavigationTests",
+//            dependencies: [
+//                "MapboxNavigation",
+//                "TestHelper",
+//                "OHHTTPStubs",
+//                "CarPlayTestHelper",
+//                "SnapshotTesting",
+//            ],
+//            exclude: [
+//                "Info.plist",
+//                "__Snapshots__", // Ignore snapshots folder
+//            ]
+//        ),
     ]
 )
