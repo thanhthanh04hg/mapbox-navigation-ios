@@ -29,15 +29,6 @@
         }
       },
       {
-        "package": "MapboxCoreMaps",
-        "repositoryURL": "https://github.com/mapbox/mapbox-core-maps-ios.git",
-        "state": {
-          "branch": null,
-          "revision": "51f776b11bcff34ced88fcf14e4ed9c568257232",
-          "version": "10.18.0"
-        }
-      },
-      {
         "package": "MapboxDirections",
         "repositoryURL": "https://github.com/mapbox/mapbox-directions-swift.git",
         "state": {
@@ -47,21 +38,12 @@
         }
       },
       {
-        "package": "MapboxMaps",
-        "repositoryURL": "https://github.com/mapbox/mapbox-maps-ios.git",
-        "state": {
-          "branch": null,
-          "revision": "8ef49bb140bbd5d51917f1e69d4c3949a176c009",
-          "version": "10.18.2"
-        }
-      },
-      {
         "package": "MapboxNavigationNative",
         "repositoryURL": "https://github.com/mapbox/mapbox-navigation-native-ios.git",
         "state": {
           "branch": null,
-          "revision": "b1c9d09cca14c69455f2ce79dc588f2ae06bde37",
-          "version": "204.0.1"
+          "revision": "f310267eec619f24c4fd0263d44a8db17204af9d",
+          "version": "206.1.1"
         }
       },
       {
